@@ -5,21 +5,21 @@
 class Orderer < Formula
   desc "orderer is a CLI for importing orders into shopify."
   homepage "https://github.com/OfficiallyEQL/orderer"
-  version "0.0.13"
+  version "0.0.14"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/OfficiallyEQL/orderer/releases/download/v0.0.13/orderer_0.0.13_darwin_arm64.tar.gz"
-      sha256 "d730d01d0e5d185b1f413005f674ed1f7f7fe10847038764906c95ff6e7f4a5d"
+      url "https://github.com/OfficiallyEQL/orderer/releases/download/v0.0.14/orderer_0.0.14_darwin_arm64.tar.gz"
+      sha256 "b6faeb35c5db051dc76a0c6411825cf4ca39772967b1146b663b782c108255d2"
 
       def install
         bin.install "orderer"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/OfficiallyEQL/orderer/releases/download/v0.0.13/orderer_0.0.13_darwin_amd64.tar.gz"
-      sha256 "3aba0667ee08ad82e86adac3d6a1f6d9b7e737148fa916211de918ed5837c941"
+      url "https://github.com/OfficiallyEQL/orderer/releases/download/v0.0.14/orderer_0.0.14_darwin_amd64.tar.gz"
+      sha256 "cc56b68854f5b6a100d0254443fb42eed353cc70a0ff0774557dea8154156e92"
 
       def install
         bin.install "orderer"
@@ -29,16 +29,16 @@ class Orderer < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/OfficiallyEQL/orderer/releases/download/v0.0.13/orderer_0.0.13_linux_amd64.tar.gz"
-      sha256 "94943a86d3b4b1cbc2624d496747aedb098246fbb9a8bb4a42b37438d1756647"
+      url "https://github.com/OfficiallyEQL/orderer/releases/download/v0.0.14/orderer_0.0.14_linux_amd64.tar.gz"
+      sha256 "54ab393f76ba521b7e92cbcd6a817500ce718971cda7d3af8a0cbc70c68fd486"
 
       def install
         bin.install "orderer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/OfficiallyEQL/orderer/releases/download/v0.0.13/orderer_0.0.13_linux_arm64.tar.gz"
-      sha256 "b3ceee2eb3b65288d8c0be1525b7d5c93cfb018055c0feab350e0bb5078053f1"
+      url "https://github.com/OfficiallyEQL/orderer/releases/download/v0.0.14/orderer_0.0.14_linux_arm64.tar.gz"
+      sha256 "61306b980b10dc1d4a51f6108795a92902c53765bdf6a103f70b425a24a38088"
 
       def install
         bin.install "orderer"
